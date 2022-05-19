@@ -119,22 +119,6 @@ img {
     background-color: var(--bluecolor);
     color: var(--whitecolor); 
 }
-.contact-address {
-    color: var(--whitecolor);
-    text-decoration: none;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-}
-.contact-footer {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -251,7 +235,23 @@ img {
 .footer-item {
     padding-top: 9px;
 }
-.title-textheader {
+.contact-address {
+    color: var(--whitecolor);
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.contact-footer {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.title-textfooter {
     color: var(--whitecolor);
 }
 .button-list {
