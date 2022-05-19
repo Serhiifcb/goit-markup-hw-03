@@ -18,6 +18,15 @@ img {
     max-width: 100%;
     height: auto;
 }
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 94px 0;
+}
 /*Класи для хедера*/
 .page-header {
     display: flex;
@@ -101,24 +110,7 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin: 30px auto 0 auto;
 }
-.filtr-button {
-    cursor: pointer;
-    background-color: #f5f4fa;
-    color: var(--maincolor);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.61;
-    letter-spacing: 0.03em;
-    border-radius: 4px;
-    border-color: #ffffff;
-    border-style: hidden;
-    padding: 6px 22px 6px 22px;
-}
-.filtr-button:hover, .filtr-button:focus {
-    cursor: pointer;
-    background-color: var(--bluecolor);
-    color: var(--whitecolor); 
-}
+/*Класи для секції Чим ми займаємося*/
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -141,16 +133,47 @@ img {
     margin: 0;
     padding: 0;
 }
-.team {
-    background-color: var(--backgroundcolorlight);
+.features-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
-.features {
+.features-title {
     color: var(--maincolor);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+.features-text {
+    color: var(--navcontactcolor);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.process-img-list {
+    display: flex;
+    margin: 0px;
+    padding: 50px 0 0 0;
+}
+.features-item:not(:first-child),
+.process-item:not(:first-child),
+.team-item:not(:first-child) {
+    margin-left: 30px;
+}
+/*Класи для секції Команда*/
+.team {
+    background-color: var(--backgroundcolorlight);
+}
+.team-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    padding: 50px 0 0 0;
+}
+.team-item {
+    background-color: var(--whitecolor);
 }
 .workers {
     color: var(--maincolor);
@@ -169,59 +192,6 @@ img {
     text-align: center;
     margin: 0;
     padding-bottom: 30px;
-}
-.text {
-    color: var(--navcontactcolor);
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-}
-.project-name {
-    color: var(--maincolor);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2.0;
-    letter-spacing: 0.06em;
-    padding: 20px 24px 4px 24px;
-    margin: 0;
-}
-.project-type {
-    color: var(--navcontactcolor);
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    padding: 0px 24px 20px 24px;
-    margin: 0;
-}
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-.features-section {
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-.section {
-    padding: 94px 0;
-}
-.process-img {
-    display: flex;
-    margin: 0px;
-    padding: 50px 0 0 0;
-}
-.features-item:not(:first-child), .process-item:not(:first-child), .team-item:not(:first-child) {
-    margin-left: 30px;
-}
-.team-list {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    padding: 50px 0 0 0;
-}
-.team-item {
-    background-color: var(--whitecolor);
 }
 /*Класи для футера*/
 .footer-section {
@@ -254,6 +224,7 @@ img {
 .title-textfooter {
     color: var(--whitecolor);
 }
+/*Класи для Портфоліо*/
 .button-list {
     display: flex;
     justify-content: center;
@@ -263,21 +234,60 @@ img {
 .button-item:not(:first-child) {
     margin-left: 8px;
 }
+.filtr-button {
+    cursor: pointer;
+    background-color: #f5f4fa;
+    color: var(--maincolor);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.61;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    border-color: #ffffff;
+    border-style: hidden;
+    padding: 6px 22px 6px 22px;
+}
+.filtr-button:hover,
+.filtr-button:focus {
+    cursor: pointer;
+    background-color: var(--bluecolor);
+    color: var(--whitecolor);
+}
 .project-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 50px 0 0 0;
-    margin: 0;
+    padding: 0;
+    margin: 50px 0 0 0;
 }
+/*Визначаємо лівий маржин по замовчуванню*/
 .project-item {
     margin-left: 30px;
     border: 1px solid #EEEEEE;
     max-width: 370px;
 }
+/*Кожен третій починаючи з першого обнуляємо лівий маржин визначений вище*/
 .project-item:nth-child(3n+1) {
     margin: 0;
 }
+/*Для всіх проектів починаючи з четвертого ставимо верхній маржин*/
 .project-item:nth-child(n+4) {
     margin-top: 30px;
+}
+.project-name {
+    color: var(--maincolor);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    padding: 20px 24px 4px 24px;
+    margin: 0;
+}
+.project-type {
+    color: var(--navcontactcolor);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    padding: 0px 24px 20px 24px;
+    margin: 0;
 }
