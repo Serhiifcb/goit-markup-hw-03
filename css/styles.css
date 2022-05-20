@@ -212,12 +212,12 @@ img {
     background-color: var(--backgroundcolordark);
     padding: 60px 0;
 }
-.footer-list {
-    margin: 0;
-    padding: 20px 0 0 0;
+.footer-address {
+    margin-top: 20px;    
 }
-.footer-item {
-    padding-top: 9px;
+/*Для всіх елементів починаючи з другого ставимо верхній маржин*/
+.footer-item:nth-child(n+2) {
+    margin-top: 9px;
 }
 .contact-address {
     color: var(--whitecolor);
