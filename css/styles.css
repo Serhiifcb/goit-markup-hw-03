@@ -28,10 +28,12 @@ img {
     padding: 94px 0;
 }
 /*Класи для хедера*/
+.header-section {
+    border-bottom: 1px solid #EEEEEE;
+}
 .page-header {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #EEEEEE;
 }
 .page-header a {
     padding: 24px 0 25px 0;
@@ -49,8 +51,11 @@ img {
     color: var(--maincolor);
 }
 .navigation {
-    display: flex;
     margin: 0 0 0 93px;
+}
+.navigation-list {
+    display: flex;
+    margin: 0;
     padding: 0;
 }
 .nav-item:not(:first-child) {
